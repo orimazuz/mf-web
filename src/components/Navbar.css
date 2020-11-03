@@ -1,6 +1,6 @@
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  height: 80px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,18 +15,20 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  max-width: 1500px;
+  max-width: 100%;
 }
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
+  margin-left: 20px;
+  height: 45px;
+  width: 100vw;
 }
 
 .fa-typo3 {
@@ -36,13 +38,15 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
+  height: 45px;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  margin-bottom: 2rem;
+  margin-right: 20px;
+  width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
 }
 
 .nav-item {
@@ -84,9 +88,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 45px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -102,6 +106,7 @@
 
   .nav-links {
     text-align: center;
+    font-size: 2rem;
     padding: 2rem;
     width: 100%;
     display: table;
@@ -116,16 +121,15 @@
   .navbar-logo {
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    left: 20px;
+    /* transform: translate(25%, 50%); */
   }
 
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    top: 5px;
+    right: 20px;
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -140,9 +144,9 @@
     text-align: center;
     margin: 2rem auto;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background-color: transparent;
     color: #fff;
     padding: 14px 20px;
