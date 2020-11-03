@@ -1,51 +1,60 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <nav className='footer-container'>
         <div class='social-media-wrap'>
-            <Link
+            <a
               class='social-icon-link facebook'
-              to='/'
+              href='http://facebook.com/mentalfracture'
               target='_blank'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link instagram'
-              to='/'
+              href='http://instagram.com/mentalfractureband/'
               target='_blank'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link youtube'
-              to='/'
+              href='https://www.youtube.com/channel/UCWhdDyxXT4PRR8U9yqTSyOw'
               target='_blank'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
               aria-label='Youtube'
             >
               <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
+            </a>
+            <a
+              class='social-icon-link spotify'
+              href='https://open.spotify.com/artist/0sYaQqCfJvKxyfJWco2t8O'
               target='_blank'
-              aria-label='Twitter'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
+              aria-label='Spotify'
             >
               <i class='fab fa-spotify' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
+            </a>
+            <a
+              class='social-icon-link bandcamp'
+              href='https://mentalfracture.bandcamp.com'
               target='_blank'
-              aria-label='LinkedIn'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
+              aria-label='Bandcamp'
             >
               <i class='fab fa-bandcamp' />
-            </Link>
+            </a>
         </div>
     </nav>
   );
