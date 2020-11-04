@@ -102,3 +102,55 @@
   width: 100%;
   height: 100%;
 }
+
+.listen-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.listen-box {
+  position: relative;
+  width: 50%;
+}
+
+.listen-list {
+  list-style: none;
+}
+
+.bandcamp-listen-small {
+  display: none;
+  border: 0;
+  width: 60vw;
+  height: 60vw;
+}
+
+.bandcamp-listen-full {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .listen-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listen-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bandcamp-listen-small {
+    display: block;
+    border-radius: 5px;
+  }
+
+  .bandcamp-listen-full {
+    display: none;
+  }
+}

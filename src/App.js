@@ -7,6 +7,7 @@ import Bio from './components/pages/Bio';
 import Videos from './components/pages/Videos';
 import Shows from './components/pages/Shows';
 import Contact from './components/pages/Contact';
+import Listen from './components/pages/Listen';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/listen' component={Listen} />
           <Route path='/bio' component={Bio} />
           <Route path='/shows' component={Shows} />
           <Route path='/videos' component={Videos} />

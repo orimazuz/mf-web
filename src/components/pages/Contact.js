@@ -6,7 +6,7 @@ export default function Contact() {
     <div className='page-wrap'>
     <div className='info-page'>
     <div className='info-header'>
-    <h1>Contact</h1>
+    <h1>CONTACT</h1>
     </div>
     <div className='info-body'>
       <h1>blabla</h1>

@@ -6,7 +6,7 @@ export default function Videos() {
             <div className='page-wrap'>
             <div className='info-page'>
             <div className='info-header'>
-            <h1>Videos</h1>
+            <h1>VIDEOS</h1>
             </div>
             <div className='info-body'>
             <div className='video-container'>

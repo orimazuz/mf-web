@@ -6,7 +6,7 @@ export default function Shows() {
     <div className='page-wrap'>
     <div className='info-page'>
     <div className='info-header'>
-    <h1>Shows</h1>
+    <h1>SHOWS</h1>
     </div>
     <div className='info-body'>
       <h1>There are currently no upcoming shows</h1>
