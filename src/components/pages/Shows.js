@@ -9,7 +9,9 @@ export default function Shows() {
     <h1>SHOWS</h1>
     </div>
     <div className='info-body'>
-      <h1>There are currently no upcoming shows</h1>
+      <div className='shows-container'>
+        <h1>There are currently no upcoming shows</h1>
+      </div>
     </div>
     </div>
     </div>

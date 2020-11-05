@@ -85,6 +85,12 @@
   position: relative;
 }
 
+.video-thumbnail {
+  width: 20%;
+  font-size: 20%;
+  border-radius: 5px;
+}
+
 .mf-video {
   position: absolute;
   top: 0;
@@ -220,3 +226,18 @@
   transition: 1s;
   background-color: rgb(209, 209, 209);
 }
+
+.shows-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shows-container > h1 {
+  font-size: 30px;
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
