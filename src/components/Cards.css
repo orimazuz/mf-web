@@ -16,9 +16,6 @@ h1 {
   margin: 0 auto;
 }
 
-.cards__wrapper {
-}
-
 .cards__items {
   display: flex;
   margin-bottom: 20px;
@@ -31,7 +28,7 @@ h1 {
   max-width: 500px;
   margin: 0 1rem;
   border-radius: 5px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(82, 82, 82);
 }
 
 .cards__item__link {
@@ -89,13 +86,9 @@ h1 {
   transform: scale(1.1);
 }
 
-.cards__item__info {
-  /* padding: 5px 5px 5px; */
-}
-
 .cards__item__text {
-  color: #252e48;
-  font-size: 18px;
+  color: #ebebeb;
+  font-size: 17px;
   text-align: center;
 }
 

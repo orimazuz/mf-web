@@ -12,8 +12,8 @@ export default function Listen() {
     <div className='info-body'>
         <div className='listen-container'>
             <div className='listen-box'>
-            <iframe className="bandcamp-listen-small" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
-            <iframe className="bandcamp-listen-full" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
+            <iframe className="bandcamp-listen-small" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
+            <iframe className="bandcamp-listen-full" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
             </div>
             <div className='listen-box'>
                 <ul className='listen-list'>
@@ -22,12 +22,6 @@ export default function Listen() {
                         dest="https://open.spotify.com/album/0TdEPoc64exz2Sx3N0UcMU" 
                         type="play"
                         icon="spotify"/>
-                    </li>
-                    <li>
-                    <ListenBtn 
-                        dest="https://music.apple.com/il/album/the-minds-desire/1522361638?uo=4"
-                        type="download"
-                        icon="itunes"/>
                     </li>
                     <li>
                     <ListenBtn 

@@ -8,7 +8,7 @@ const serviceDict = {
     'apple': 'Music',
     'bandcamp': 'bandcamp',
     'deezer': 'deezer',
-    'youtube': 'YouTube',
+    'youtube': 'YouTube Music',
     'google-play': 'Google Play',
     'amazon': 'amazon music'
 }
