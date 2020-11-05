@@ -27,12 +27,9 @@ class Videos extends React.Component {
   }
 
   render() {
+    this.props.cs();
   return (
-            <div className='page-wrap'>
             <div className='info-page'>
-            <div className='info-header'>
-            <h1>VIDEOS</h1>
-            </div>
             <div className='info-body'>
             <ImageGallery
               showPlayButton={false}
@@ -75,7 +72,6 @@ class Videos extends React.Component {
                       },
                     ]}
             />
-            </div>
             </div>
             </div>
   );

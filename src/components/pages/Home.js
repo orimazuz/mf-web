@@ -1,13 +1,15 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
 
-function Home() {
-  return (
-    <>
-      <HeroSection />
-    </>
-  );
+class Home extends React.Component {
+  render() {
+    this.props.cs();
+    return (
+      <>
+        
+      </>
+    );
+  }
 }
 
 export default Home;

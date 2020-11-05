@@ -27,12 +27,9 @@ class Gallery extends React.Component {
   }
 
   render() {
+    this.props.cs();
   return (
-            <div className='page-wrap'>
             <div className='info-page'>
-            <div className='info-header'>
-            <h1>GALLERY</h1>
-            </div>
             <div className='info-body'>
             <ImageGallery
               items={[{
@@ -57,7 +54,6 @@ class Gallery extends React.Component {
                       },
                     ]}
             />
-            </div>
             </div>
             </div>
   );

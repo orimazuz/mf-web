@@ -2,19 +2,37 @@ video {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  position: fixed;
-  z-index: -1;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .hero-container {
   height: 100vh;
   width: 100%;
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+  font-size: 50px;
+}
+
+.title-container {
+  display: flex;
+  width: 100%;
+  height: 35vw;
+  max-width: 1920px;
+  max-height: 400px;
+  font-size: 100px;
+  justify-content: center;
+  object-fit: contain;
+  position: relative;
+  top:0;
 }
 
 .hero-container > h1 {
@@ -22,7 +40,7 @@ video {
   font-size: 100px;
 }
 
-.hero-container > p {
+.hero-container > h2 {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
@@ -43,15 +61,16 @@ video {
 }
 
 .album-artwork {
-  border-radius: 7px;
   display: block;
-  margin-top: 5vh;
   width: 80vw;
   height: auto;
   max-width: 50vh;
   max-height: 50vh;
   box-shadow: 0px 0px 20px 2px white;
   animation: glow 3s infinite;
+  background-color: transparent;
+  border: 0;
+  border-radius: 7px;
 }
 
 @keyframes glow {

@@ -1,35 +1,47 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
-  const [click, setClick] = useState(false);
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      click: false,
+    }
+  }
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  closeMobileMenu() {
+    this.setState({click: false});
+  }
+
+  render () {
+  const handleClick = () => this.setState({click: !this.state.click});
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' onClick={() => {this.closeMobileMenu()}}>
             Mental Fracture
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={this.state.click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={this.state.click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
               <Link
                 to='/listen'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {this.closeMobileMenu()}}
               >
                 Listen
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/bio' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/bio' 
+                className='nav-links' 
+                onClick={() => {this.closeMobileMenu()}}
+                >
                 Bio
               </Link>
             </li>
@@ -37,7 +49,7 @@ function Navbar() {
               <Link
                 to='/shows'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {this.closeMobileMenu()}}
               >
                 Shows
               </Link>
@@ -46,7 +58,7 @@ function Navbar() {
               <Link
                 to='/gallery'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {this.closeMobileMenu()}}
               >
                 Gallery
               </Link>
@@ -55,7 +67,7 @@ function Navbar() {
               <Link
                 to='/videos'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {this.closeMobileMenu()}}
               >
                 Videos
               </Link>
@@ -64,7 +76,7 @@ function Navbar() {
               <Link
                 to='/contact'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {this.closeMobileMenu()}}
               >
                 Contact
               </Link>
@@ -74,6 +86,7 @@ function Navbar() {
       </nav>
     </>
   );
+  }
 }
 
 export default Navbar;
