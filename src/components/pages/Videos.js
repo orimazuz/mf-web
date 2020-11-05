@@ -34,8 +34,6 @@ class Videos extends React.Component {
             <h1>VIDEOS</h1>
             </div>
             <div className='info-body'>
-            {/* <div className='video-container'> */}
-            {/* <iframe className="mf-video" title="Mental Fracture Playlist" src="https://www.youtube.com/embed/videoseries?list=PLItZLsLdjgz1iRFsZQfYOyuNaT2T6C9jD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe> */}
             <ImageGallery
               showPlayButton={false}
               showFullscreenButton={false}
@@ -77,7 +75,6 @@ class Videos extends React.Component {
                       },
                     ]}
             />
-            {/* </div> */}
             </div>
             </div>
             </div>
