@@ -48,7 +48,7 @@ class Contact extends React.Component {
         <div className='paragraph'>
         <p className={this.state.message ? 'message-display' : 'message-none'}>{messageContent}</p>
         </div>
-          <form className="form" onSubmit={this.sendEmail}>
+          <form className="form" onSubmit={(e) => {this.sendEmail(e)}}>
             <input type="text" className="form-control" placeholder="Name" name="name"/>
             <input type="email" className="form-control" placeholder="Email Address" name="email"/>
             <input type="text" className="form-control" placeholder="Subject" name="subject"/>
