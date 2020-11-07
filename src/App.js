@@ -10,6 +10,7 @@ import Contact from './components/pages/Contact';
 import Listen from './components/pages/Listen';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery';
+import Video from './components/Video';
 import { Link } from 'react-router-dom';
 import './components/HeroSection.css';
 
@@ -56,7 +57,7 @@ class App extends React.Component {
           <Navbar/>
           <div className='page-wrap'>
           <div className={this.state.heroMode ? 'hero-container' : 'title-container'}>
-            <video src='/videos/mf-clip.mp4' autoPlay loop muted />
+            <Video src='/videos/mf-title-720.mp4' thumb='/images/video-thumb.png' autoPlay="autoplay" loop="loop" muted="muted" />
             <div className="titel">
             <h1>{this.state.title}</h1>
             {this._renderHome()}        

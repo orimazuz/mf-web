@@ -24,6 +24,7 @@
   justify-content: baseline;
   background-color: rgb(48, 48, 48);
   object-fit: contain;
+  overflow: hidden;
 }
 
 .info-page {

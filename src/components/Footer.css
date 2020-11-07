@@ -13,6 +13,13 @@
   z-index: 999;
 }
 
+.creds {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  color: #333;
+}
+
 /* Social Icons */
 .social-icon-link {
   color: #fff;
