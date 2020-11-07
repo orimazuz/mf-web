@@ -36,35 +36,35 @@ class Videos extends React.Component {
               showFullscreenButton={false}
               showNav={false}
               items={[{
-                        thumbnail: '/images/ori.jpg',
+                        thumbnail: 'http://i3.ytimg.com/vi/8RPZoOERhdY/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/8RPZoOERhdY',
                         thumbnailLabel: "Poetic Hate Live",
                         thumbnailClass: "video-thumbnail",
                         renderItem: this._renderVideo.bind(this)
                       },
                       {
-                        thumbnail: '/images/chai.jpg',
+                        thumbnail: 'http://i3.ytimg.com/vi/6pAw-igfpu0/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/6pAw-igfpu0',
                         thumbnailLabel: "Summer Dies Live",
                         thumbnailClass: "video-thumbnail",
                         renderItem: this._renderVideo.bind(this)
                       },
                       {
-                        thumbnail: '/images/yogev.jpg',
+                        thumbnail: 'http://i3.ytimg.com/vi/X5nJJDJcJHg/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/X5nJJDJcJHg',
                         thumbnailLabel: "The Mind's Desire Official Vieo",
                         thumbnailClass: "video-thumbnail",
                         renderItem: this._renderVideo.bind(this)
                       },
                       {
-                        thumbnail: '/images/philip.jpg',
+                        thumbnail: 'http://i3.ytimg.com/vi/-UVwl1bZKQM/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/-UVwl1bZKQM',
                         thumbnailLabel: "Genesis Official Vieo",
                         thumbnailClass: "video-thumbnail",
                         renderItem: this._renderVideo.bind(this)
                       },
                       {
-                        thumbnail: '/images/2014.JPG',
+                        thumbnail: 'http://i3.ytimg.com/vi/zq7kmmO2zuc/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/zq7kmmO2zuc',
                         thumbnailLabel: "Genesis Live 2010",
                         thumbnailClass: "video-thumbnail",

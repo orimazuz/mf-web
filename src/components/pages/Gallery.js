@@ -26,33 +26,31 @@ class Gallery extends React.Component {
     );
   }
 
+  getImages() {
+    let images = [];
+    const years = ['2020', '2019', '2014'];
+    const numImages = [52, 23, 10];
+    for (let i = 0; i < years.length; i++)
+    {
+      for (let j = 1; j <= numImages[i]; j++)
+      {
+        const file = '/images/gallery/' + years[i] + '-' + j.toString() + '.jpg';
+        images.push({
+          thumbnail: file,
+          original: file,
+        });
+      }
+    }
+    return images;
+  }
+
   render() {
     this.props.cs();
   return (
             <div className='info-page'>
             <div className='info-body'>
             <ImageGallery
-              items={[{
-                        thumbnail: '/images/ori.jpg',
-                        original: '/images/ori.jpg',
-                      },
-                      {
-                        thumbnail: '/images/chai.jpg',
-                        original: '/images/chai.jpg',
-                      },
-                      {
-                        thumbnail: '/images/yogev.jpg',
-                        original: '/images/yogev.jpg',
-                      },
-                      {
-                        thumbnail: '/images/philip.jpg',
-                        original: '/images/philip.jpg',
-                      },
-                      {
-                        thumbnail: '/images/2014.JPG',
-                        original: '/images/2014.JPG',
-                      },
-                    ]}
+              items={this.getImages()}
             />
             </div>
             </div>
