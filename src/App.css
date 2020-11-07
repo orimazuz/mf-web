@@ -27,7 +27,6 @@
   align-items: center;
   align-content: center;
   color: rgb(238, 238, 238);
-  font-size: 100px;
   background-color: rgb(48, 48, 48);
   box-shadow: 0 6px 300px rgba(56, 159, 255, 0.753);
   object-fit: contain;
@@ -50,7 +49,6 @@
 }
 
 .info-body > h1 {
-  font-size: 40px;
   align-self: flex-start;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -62,7 +60,6 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  font-size: 20px;
 }
 
 .video-container {
