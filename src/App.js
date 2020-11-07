@@ -10,9 +10,7 @@ import Contact from './components/pages/Contact';
 import Listen from './components/pages/Listen';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery';
-import Video from './components/Video';
-import { Link } from 'react-router-dom';
-import './components/HeroSection.css';
+import HeroSection from './components/HeroSection';
 
 
 class App extends React.Component {
@@ -20,7 +18,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       heroMode: true,
-      title: "THE MIND'S DESIRE",
+      title: "",
     };
   }
 
@@ -33,36 +31,12 @@ class App extends React.Component {
     }
   }
 
-  _renderHome() {
-    if (this.state.heroMode) {
-      return this._renderHero();
-    }
-    return;
-  }
-
-  _renderHero() {
-    return (
-      <>
-        <h2>Debut Album Out Now!</h2>
-          <Link to='/listen' className='album-link' onClick={() => {this.changeSection("LISTEN", false)}}>
-              <img className='album-artwork' src='/images/mind-art.jpg' alt='Artwork'/>
-          </Link>
-      </>
-    );
-  }
-
   render () {
     return (
         <Router>
           <Navbar/>
           <div className='page-wrap'>
-          <div className={this.state.heroMode ? 'hero-container' : 'title-container'}>
-            <Video src='/videos/mf-title-720.mp4' thumb='/images/video-thumb.png' autoPlay="autoplay" loop="loop" muted="muted" />
-            <div className="titel">
-            <h1>{this.state.title}</h1>
-            {this._renderHome()}        
-            </div>
-            </div>
+            <HeroSection title={this.state.title} heroMode={this.state.heroMode}/>
             <Switch>
               <Route path='/' exact><Home cs={() => {this.changeSection("THE MIND'S DESIRE", true)}}/></Route>
               <Route path='/listen'><Listen cs={() => {this.changeSection("LISTEN", false)}}/></Route>
