@@ -36,7 +36,7 @@ class App extends React.Component {
         <Router>
           <Navbar/>
           <div className='page-wrap'>
-            <HeroSection title={this.state.title} heroMode={this.state.heroMode}/>
+            <HeroSection title={this.state.title} heroMode={this.state.heroMode} cs={() => {this.changeSection("LISTEN", false)}}/>
             <Switch>
               <Route path='/' exact><Home cs={() => {this.changeSection("THE MIND'S DESIRE", true)}}/></Route>
               <Route path='/listen'><Listen cs={() => {this.changeSection("LISTEN", false)}}/></Route>

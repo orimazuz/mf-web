@@ -9,7 +9,7 @@ class HeroSection extends React.Component {
         return (
         <>
             <h2>Debut Album Out Now!</h2>
-            <Link to='/listen' className='album-link' onClick={() => {this.changeSection("LISTEN", false)}}>
+            <Link to='/listen' className='album-link' onClick={() => {this.props.cs()}}>
                 <img className='album-artwork' src='/images/mind-art.jpg' alt='Artwork'/>
             </Link>
         </>
