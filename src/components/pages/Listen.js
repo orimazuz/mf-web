@@ -3,7 +3,50 @@ import '../../App.css';
 import { ListenBtn } from '../ListenBtn';
 
 class Listen extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            small: false,
+        }
+        if (window.innerWidth <= 960) {
+            this.state.small = true;
+        }
+        this.updateDimensions = this.updateDimensions.bind(this);
+    }
+
+    getBandcampPlayer() {
+        if (this.state.small) {
+            return (<>
+                <iframe className="bandcamp-listen-small" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
+            </>);
+        } else {
+            return (<>
+                <iframe className="bandcamp-listen-full" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
+            </>);
+        }
+    }
+
+    updateDimensions() {
+        if (window.innerWidth <= 960)
+        {
+            if (!this.state.small) {
+                this.setState({small: true});
+            }
+        } else {
+            if (this.state.small) {
+                this.setState({small: false});
+            }
+        }
+    }
   
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+    }
+
     render() {
         this.props.cs();
     return (
@@ -11,8 +54,7 @@ class Listen extends React.Component {
         <div className='info-body'>
             <div className='listen-container'>
                 <div className='listen-box'>
-                <iframe className="bandcamp-listen-small" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
-                <iframe className="bandcamp-listen-full" title="bandcamp-listen" src="https://bandcamp.com/EmbeddedPlayer/album=475472272/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://mentalfracture.bandcamp.com/album/the-minds-desire">The Mind&#39;s Desire by Mental Fracture</a></iframe>
+                    {this.getBandcampPlayer()}
                 </div>
                 <div className='listen-box'>
                     <ul className='listen-list'>

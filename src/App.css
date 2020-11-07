@@ -102,10 +102,11 @@
 }
 
 .bandcamp-listen-small {
-  display: none;
   border: 0;
   width: 60vw;
   height: 60vw;
+  border-radius: 5px;
+
 }
 
 .bandcamp-listen-full {
@@ -126,15 +127,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-
-  .bandcamp-listen-small {
-    display: block;
-    border-radius: 5px;
-  }
-
-  .bandcamp-listen-full {
-    display: none;
   }
 }
 
