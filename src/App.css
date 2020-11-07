@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
-  box-sizing: border-box;
 }
 
 .titel {
@@ -43,6 +42,7 @@
   box-shadow: 0 6px 300px rgba(56, 159, 255, 0.753);
   object-fit: contain;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .info-body {
