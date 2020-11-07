@@ -21,7 +21,7 @@ class HeroSection extends React.Component {
   render () {
       return (
         <div className={this.props.heroMode ? 'hero-container' : 'title-container'}>
-            <Video src='/videos/mf-title-720.mp4' thumb='/images/video-thumb.png' autoPlay="autoplay" loop="loop" muted="muted" />
+            <Video src='/videos/mf-title-720-h264.mp4' thumb='/images/video-thumb.png' autoPlay="autoplay" loop="loop" muted="muted" />
             <div className="title">
                 <h1>{this.props.title}</h1>
                 {this.renderHero()}        
