@@ -2,6 +2,7 @@ import React from 'react';
 import './HeroSection.css';
 import Video from './Video';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class HeroSection extends React.Component {
   renderHero() {
@@ -10,7 +11,7 @@ class HeroSection extends React.Component {
         <>
             <h2>Debut Album Out Now!</h2>
             <Link to='/listen' className='album-link' onClick={() => {this.props.cs()}}>
-                <img className='album-artwork' src='/images/mind-art.jpg' alt='Artwork'/>
+                <LazyLoadImage className='album-artwork' src='/images/mind-art.jpg' alt='Artwork'/>
             </Link>
         </>
         );
