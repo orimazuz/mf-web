@@ -214,5 +214,21 @@
   font-size: 30px;
 }
 
-@import "~react-image-gallery/styles/css/image-gallery.css";
+.lzy-img {
+  object-fit: fill;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
+.img-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";

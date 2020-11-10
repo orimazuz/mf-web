@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import ImageGallery from 'react-image-gallery';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class Gallery extends React.Component {
   constructor (props) {
@@ -10,34 +11,32 @@ class Gallery extends React.Component {
     };
   }
 
-
-
-  _renderVideo(item) {
+  _renderImage(item) {
     return (
-            <div className='video-container'>
-                <iframe className="mf-video"
-                  title={item.description}
-                  src={item.embedUrl}
-                  frameBorder='0'
-                  allowFullScreen
-                >
-                </iframe>
-            </div>
+      <div className="img-container">
+                <LazyLoadImage className="lzy-img"
+                  alt={item.alt}
+                  src={item.original}
+                />
+      </div>
     );
   }
 
   getImages() {
     let images = [];
+    const imagePath = '/images/gallery/'
+    const thumbPath = '/images/thumbs/'
     const years = ['2020', '2019', '2014'];
-    const numImages = [52, 23, 10];
+    const numImages = [49, 23, 9];
     for (let i = 0; i < years.length; i++)
     {
       for (let j = 1; j <= numImages[i]; j++)
       {
-        const file = '/images/gallery/' + years[i] + '-' + j.toString() + '.jpg';
+        const file =  + years[i] + '-' + j.toString() + '.jpg';
         images.push({
-          thumbnail: file,
-          original: file,
+          thumbnail: thumbPath + file,
+          original: imagePath + file,
+          renderItem: this._renderImage.bind(this),
         });
       }
     }

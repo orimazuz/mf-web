@@ -16,7 +16,7 @@ class Videos extends React.Component {
     return (
             <div className='video-container'>
                 <iframe className="mf-video"
-                  title={item.description}
+                  title={item.thumbnailLabel}
                   src={item.embedUrl}
                   frameBorder='0'
                   allowFullScreen
