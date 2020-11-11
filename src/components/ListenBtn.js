@@ -4,7 +4,6 @@ import './ListenBtn.css';
 const TYPES = ['play', 'download'];
 const serviceDict = {
     'spotify': 'spotify',
-    'itunes': 'iTunes',
     'apple': 'Music',
     'bandcamp': 'bandcamp',
     'deezer': 'deezer',
@@ -12,6 +11,17 @@ const serviceDict = {
     'google-play': 'Google Play',
     'amazon': 'amazon music'
 }
+
+// const serviceIDs = [
+//     'spotify',
+//     'apple',
+//     'bandcamp',
+//     'deezer',
+//     'youtube',
+//     'google-play',
+//     'amazon',
+// ]
+
 
 const retText = (type) => {
     if (type === 'play') {
@@ -32,11 +42,20 @@ export const ListenBtn = ({
       : TYPES[0];
 
     const iconName = "fab fa-" + icon;
+    const pixel = () => {return window.fbq('track', 'Lead',
+                        {content_category: 'listen',
+                        content_name: icon})}
+
+    // const pixel = () => {return window.fbq('track', 'ViewContent',
+    // {content_category: 'listen',
+    // content_type: 'product',
+    // content_ids: serviceIDs,
+    // contents: [{'id': icon, 'quantity': 1}]})}
     
     return (
         <div className="service">
             <a className="service-link" href={dest} rel="noreferrer noopener" sl-processed="1"
-                onClick={window.fbq('track', 'ViewContent', {type: type})}>
+                onClick={pixel}>
                 <div className="image-container">
                     <i className={iconName}/>&nbsp;{serviceDict[icon]}
                 </div>
