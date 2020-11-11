@@ -35,7 +35,8 @@ export const ListenBtn = ({
     
     return (
         <div className="service">
-            <a className="service-link" href={dest} rel="noreferrer noopener" sl-processed="1">
+            <a className="service-link" href={dest} rel="noreferrer noopener" sl-processed="1"
+                onClick={window.fbq('track', 'ViewContent', {type: type})}>
                 <div className="image-container">
                     <i className={iconName}/>&nbsp;{serviceDict[icon]}
                 </div>
