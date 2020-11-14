@@ -19,7 +19,7 @@ class Bio extends React.Component {
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
                             <CardItem
-                            src='images/2014.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/2014.JPG?alt=media&token=f06b712b-9ec7-4821-a979-7c8c30d5d8ef'
                             text="Mental Fracture performing in 2014"
                             />
                         </ul>
@@ -29,7 +29,7 @@ class Bio extends React.Component {
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
                             <CardItem
-                            src='images/mind-art.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/mind-art.jpg?alt=media&token=578fad6c-c8ee-4c59-bd63-9638e494d8a5'
                             text="The Mind's Desire"
                             />
                         </ul>
@@ -39,22 +39,22 @@ class Bio extends React.Component {
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
                             <CardItem
-                            src='images/ori.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/ori.jpg?alt=media&token=2710cc00-3118-4926-948f-b6901fa0bc98'
                             text='Vocals & Keyboards'
                             label='Ori Mazuz'
                             />
                             <CardItem
-                            src='images/yogev.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/yogev.jpg?alt=media&token=0bd5f4a1-464e-46c1-8720-a2f0f0b27b35'
                             text='Guitars'
                             label='Yogev Shpilman'
                             />
                             <CardItem
-                            src='images/chai.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/chai.jpg?alt=media&token=5d891f6a-af09-46de-9cbd-27834e0cb951'
                             text='Drums'
                             label='Chai Maller'
                             />
                             <CardItem
-                            src='images/philip.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/philip.jpg?alt=media&token=0f0d89f1-db31-4e29-b7ae-0095ed090979'
                             text='Bass'
                             label='Philip Tsukerman'
                             />

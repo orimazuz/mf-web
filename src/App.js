@@ -11,7 +11,18 @@ import Listen from './components/pages/Listen';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery';
 import HeroSection from './components/HeroSection';
+import firebase from 'firebase/app'
 
+firebase.initializeApp({
+  apiKey: "AIzaSyDGlZSbFjTjcJQ6uKEISzbJHMe-blQKX3o",
+  authDomain: "mental-fracture-web.firebaseapp.com",
+  databaseURL: "https://mental-fracture-web.firebaseio.com",
+  projectId: "mental-fracture-web",
+  storageBucket: "mental-fracture-web.appspot.com",
+  messagingSenderId: "642099386814",
+  appId: "1:642099386814:web:98108dc813f85e299201ef",
+  measurementId: "G-C0FHP1PGGM"
+});
 
 class App extends React.Component {
   constructor(props) {
