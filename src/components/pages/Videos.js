@@ -43,13 +43,6 @@ class Videos extends React.Component {
                         renderItem: this._renderVideo.bind(this)
                       },
                       {
-                        thumbnail: 'http://i3.ytimg.com/vi/6pAw-igfpu0/hqdefault.jpg',
-                        embedUrl: 'https://www.youtube.com/embed/6pAw-igfpu0',
-                        thumbnailLabel: "Summer Dies Live",
-                        thumbnailClass: "video-thumbnail",
-                        renderItem: this._renderVideo.bind(this)
-                      },
-                      {
                         thumbnail: 'http://i3.ytimg.com/vi/X5nJJDJcJHg/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/X5nJJDJcJHg',
                         thumbnailLabel: "The Mind's Desire Official Vieo",

@@ -9,9 +9,9 @@ class HeroSection extends React.Component {
     if (this.props.heroMode) {
         return (
         <>
-            <h2>Debut Album Out Now!</h2>
+            <h2>3.3.2022</h2>
             <Link to='/listen' className='album-link' onClick={() => {this.props.cs()}}>
-                <LazyLoadImage className='album-artwork' src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/mind-art.jpg?alt=media&token=578fad6c-c8ee-4c59-bd63-9638e494d8a5' alt='Artwork'/>
+                <LazyLoadImage className='album-artwork' src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/Disaccord%2FDSC02994-Crop.jpg?alt=media&token=26c19904-ae03-465b-b847-792ed891a454' alt='Artwork'/>
             </Link>
         </>
         );

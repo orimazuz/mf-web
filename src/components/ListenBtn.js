@@ -42,20 +42,10 @@ export const ListenBtn = ({
       : TYPES[0];
 
     const iconName = "fab fa-" + icon;
-    const pixel = () => {return window.fbq('track', 'Lead',
-                        {content_category: 'listen',
-                        content_name: icon})}
-
-    // const pixel = () => {return window.fbq('track', 'ViewContent',
-    // {content_category: 'listen',
-    // content_type: 'product',
-    // content_ids: serviceIDs,
-    // contents: [{'id': icon, 'quantity': 1}]})}
     
     return (
         <div className="service">
-            <a className="service-link" href={dest} rel="noreferrer noopener" sl-processed="1"
-                onClick={pixel}>
+            <a className="service-link" href={dest} rel="noreferrer noopener" sl-processed="1">
                 <div className="image-container">
                     <i className={iconName}/>&nbsp;{serviceDict[icon]}
                 </div>
