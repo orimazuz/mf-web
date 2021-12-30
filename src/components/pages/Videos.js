@@ -9,7 +9,9 @@ class Videos extends React.Component {
 
     };
   }
-
+  componentDidMount() {
+    this.props.cs();
+  }
 
 
   _renderVideo(item) {
@@ -27,7 +29,6 @@ class Videos extends React.Component {
   }
 
   render() {
-    this.props.cs();
   return (
             <div className='info-page'>
             <div className='info-body'>
@@ -37,6 +38,7 @@ class Videos extends React.Component {
               showNav={false}
               items={[{
                         thumbnail: 'http://i3.ytimg.com/vi/8RPZoOERhdY/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/8RPZoOERhdY/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/8RPZoOERhdY',
                         thumbnailLabel: "Poetic Hate Live",
                         thumbnailClass: "video-thumbnail",
@@ -44,6 +46,7 @@ class Videos extends React.Component {
                       },
                       {
                         thumbnail: 'http://i3.ytimg.com/vi/X5nJJDJcJHg/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/X5nJJDJcJHg/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/X5nJJDJcJHg',
                         thumbnailLabel: "The Mind's Desire Official Vieo",
                         thumbnailClass: "video-thumbnail",
@@ -51,6 +54,7 @@ class Videos extends React.Component {
                       },
                       {
                         thumbnail: 'http://i3.ytimg.com/vi/-UVwl1bZKQM/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/-UVwl1bZKQM/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/-UVwl1bZKQM',
                         thumbnailLabel: "Genesis Official Vieo",
                         thumbnailClass: "video-thumbnail",
@@ -58,6 +62,7 @@ class Videos extends React.Component {
                       },
                       {
                         thumbnail: 'http://i3.ytimg.com/vi/zq7kmmO2zuc/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/zq7kmmO2zuc/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/zq7kmmO2zuc',
                         thumbnailLabel: "Genesis Live 2010",
                         thumbnailClass: "video-thumbnail",

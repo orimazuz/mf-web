@@ -11,6 +11,9 @@ class Contact extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.props.cs();
+  }
 
   sendEmail(e) {
     e.preventDefault();
@@ -34,7 +37,6 @@ class Contact extends React.Component {
   }
 
   render() {
-    this.props.cs();
     const messageContent = this.state.ret ? 'Your message is sent!':
                                             'Please fill all input fields before sending the message.';
 

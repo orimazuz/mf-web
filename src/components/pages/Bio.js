@@ -4,8 +4,11 @@ import CardItem from '../CardItem';
 import '../Cards.css'
 
 class Bio extends React.Component {
-    render() {
+    componentDidMount() {
         this.props.cs();
+    }
+
+    render() {
     return (
                 <div className='info-page'>
                 <div className='info-body'>

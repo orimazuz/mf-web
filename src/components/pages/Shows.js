@@ -2,9 +2,12 @@ import React from 'react';
 import '../../App.css';
 
 class Shows extends React.Component {
-  render() {
+  componentDidMount() {
     this.props.cs();
-  return (
+  }
+
+  render() {
+    return (
     <div className='info-page'>
     <div className='info-body'>
       <div className='shows-container'>
