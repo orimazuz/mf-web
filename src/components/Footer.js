@@ -7,6 +7,16 @@ function Footer() {
         <div className='creds'>&copy;&nbsp;Mental Fracture 2020</div>
         <div className='social-media-wrap'>
             <a
+              className='social-icon-link twitter'
+              href='https://twitter.com/MentalFracture'
+              target='_blank'
+              referrerPolicy='strict-origin'
+              rel='noopener noreferrer'
+              aria-label='Twitter'
+            >
+              <i className='fab fa-twitter' />
+            </a>
+            <a
               className='social-icon-link facebook'
               href='http://facebook.com/mentalfracture'
               target='_blank'
