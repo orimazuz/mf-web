@@ -62,7 +62,7 @@ class Bio extends React.Component {
                             <CardItem
                             src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/chai.jpg?alt=media&token=5d891f6a-af09-46de-9cbd-27834e0cb951'
                             text='Drums'
-                            label='Chai Maller'
+                            label='Hai Maller'
                             />
                             <CardItem
                             src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/philip.jpg?alt=media&token=0f0d89f1-db31-4e29-b7ae-0095ed090979'
