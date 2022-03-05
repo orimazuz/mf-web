@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import Video from './Video';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 class HeroSection extends React.Component {
@@ -9,10 +9,10 @@ class HeroSection extends React.Component {
     if (this.props.heroMode) {
         return (
         <>
-            <h2>Disaccord coming out on 3.3.2022</h2>
-            <a href="https://emubands.ffm.to/disaccord">
-                        <LazyLoadImage className='album-artwork' src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/Disaccord%2FMentalFracture_album_v7.png?alt=media&token=853b2500-972d-4427-96a2-a7755c2600bc' alt='Artwork'/>
-            </a>
+            <h2>New album out on all platforms!</h2>
+            <Link to='/listen' className='album-link' onClick={() => {this.props.cs()}}>
+                <LazyLoadImage className='album-artwork' src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/Disaccord%2FMentalFracture_album_v7.png?alt=media&token=853b2500-972d-4427-96a2-a7755c2600bc' alt='Artwork'/>
+            </Link>
         </>
         );
     }

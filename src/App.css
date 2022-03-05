@@ -92,6 +92,17 @@
   position: relative;
 }
 
+.listen-devider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1px;
+  background-color:rgb(196, 194, 194);
+  box-shadow: 0 0px 20px rgba(252, 255, 56, 0.753);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .listen-box {
   position: relative;
   width: 50%;

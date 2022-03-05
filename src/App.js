@@ -49,7 +49,7 @@ class App extends React.Component {
           <div className='page-wrap'>
             <HeroSection title={this.state.title} heroMode={this.state.heroMode} cs={() => {this.changeSection("LISTEN", false)}}/>
             <Switch>
-              <Route path='/' exact><Home cs={() => {this.changeSection("GET READY", true)}}/></Route>
+              <Route path='/' exact><Home cs={() => {this.changeSection("DISACCORD", true)}}/></Route>
               <Route path='/listen'><Listen cs={() => {this.changeSection("LISTEN", false)}}/></Route>
               <Route path='/bio'><Bio cs={() => {this.changeSection("BIO", false)}}/></Route>
               <Route path='/shows'><Shows cs={() => {this.changeSection("SHOWS", false)}}/></Route>
