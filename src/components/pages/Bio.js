@@ -14,10 +14,8 @@ class Bio extends React.Component {
                 <div className='info-body'>
                     <h1>About</h1>
                     <p>
-                        Mental Fracture is a progressive rock band from Rishon LeZion, Israel.
-                        Beginning with influences like Dream Theater, Opeth, Porcupine Tree and many more, their music evolved into something more interesting and unique. 
-                        The band members wear their influences on their sleeves, playing complex, energetic, and heavy music, never afraid to incorporate a new, different kind of weirdness in their music.
-                        </p>
+                        A modern progressive rock and metal band based in Israel, Mental Fracture draws inspiration from the music of Dream Theater, Opeth, Porcupine Tree, as well as prog classics such as Camel, King Crimson, and many more. The members of the band wear their influences on their sleeves, playing complex, energetic, and heavy music, never afraid to incorporate a new, different kind of weirdness in their music.
+                    </p>
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
                             <CardItem
@@ -26,11 +24,22 @@ class Bio extends React.Component {
                             />
                         </ul>
                     </div>
+                    <h1>Disaccord</h1>
+                    <p>
+                    The band’s first full-length album, titled Disaccord, was released on March 3rd, 2022.
+It has been independently produced and was under work for several years. The themes of the songs within revolve around the concepts of cognitive dissonance and the games we play with ourselves to cope with it. The songs in the album vary constantly and change their genre, gliding through jazz, oriental music and synth, yet always staying centered around fierce, energetic rock and metal.
+                    </p>
+                    <div className='cards__wrapper'>
+                        <ul className='cards__items'>
+                            <CardItem
+                            src='https://firebasestorage.googleapis.com/v0/b/mental-fracture-web.appspot.com/o/Disaccord%2FMentalFracture_album_v7.png?alt=media&token=853b2500-972d-4427-96a2-a7755c2600bc'
+                            text="Disaccord"
+                            />
+                        </ul>
+                    </div>
                     <h1>The Mind's Desire</h1>
                     <p>
-                        A debut EP, “The Mind’s Desire”, was released in February 2019, featuring 5 songs, all of which recorded in Ori’s bedroom.
-                        The songs vary constantly and change their genre, gliding through jazz, oriental music and synth, yet always coming back to fierce, energetic rock and metal.
-                        Its lyrics take on the concept of creation, and the mind wanting to break free so that it may leave an everlasting mark on this world.
+                    The band has released a debut EP, “The Mind’s Desire” in February 2019, featuring 5 songs, all of which were recorded and produced independently. Its lyrics take on the concept of creation, and the mind wanting to break free so that it may leave an everlasting mark on this world.
                     </p>
                     <div className='cards__wrapper'>
                         <ul className='cards__items'>
@@ -42,9 +51,6 @@ class Bio extends React.Component {
                     </div>
                     <p>
                         The album is self-produced and self-released and available on all streaming platforms. Two video clips were shot during the making of the EP, one for the title track - The Mind’s Desire, and the other one for the second track - Genesis. The videos show the actual recording process.
-                    </p>
-                    <p>
-                        An up and coming self-produced full length album is soon to be released, containing all-new material, is soon to be announced and released.
                     </p>
                     <h1>Band Members</h1>
                     <div className='cards__wrapper'>

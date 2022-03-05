@@ -37,6 +37,22 @@ class Videos extends React.Component {
               showFullscreenButton={false}
               showNav={false}
               items={[{
+                        thumbnail: 'http://i3.ytimg.com/vi/2B5dR5w3Ujo/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/2B5dR5w3Ujo/hqdefault.jpg',
+                        embedUrl: 'https://www.youtube.com/embed/2B5dR5w3Ujo',
+                        thumbnailLabel: "Inception of Fear",
+                        thumbnailClass: "video-thumbnail",
+                        renderItem: this._renderVideo.bind(this)
+                      },
+                      {
+                        thumbnail: 'http://i3.ytimg.com/vi/2hAV619CRe0/hqdefault.jpg',
+                        original: 'http://i3.ytimg.com/vi/2hAV619CRe0/hqdefault.jpg',
+                        embedUrl: 'https://www.youtube.com/embed/2hAV619CRe0',
+                        thumbnailLabel: "Concrete Wall",
+                        thumbnailClass: "video-thumbnail",
+                        renderItem: this._renderVideo.bind(this)
+                      },
+                      {
                         thumbnail: 'http://i3.ytimg.com/vi/8RPZoOERhdY/hqdefault.jpg',
                         original: 'http://i3.ytimg.com/vi/8RPZoOERhdY/hqdefault.jpg',
                         embedUrl: 'https://www.youtube.com/embed/8RPZoOERhdY',
